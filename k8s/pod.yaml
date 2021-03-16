@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: consumer-go
+  namespace: kafka
+  labels:
+    name: consumer-go
+spec:
+  containers:
+    - name: consumer-go
+      image: mevzosvlad/consumer-go:0.9.6
+      imagePullPolicy: Never
